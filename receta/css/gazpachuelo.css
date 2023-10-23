@@ -1,0 +1,45 @@
+/**------------------------------------------------------------------------
+ * ?                                ABOUT
+ * @author         :  Antonio J Heredia Leiva
+ * @email          :  
+ * @repo           :  
+ * @createdOn      :  October 17 in 2023
+ * @description    :  trabajo de leguajes de marca
+ *------------------------------------------------------------------------**/
+
+ @font-face {
+   font-family: main;
+   src: url();
+ }
+ @font-face {
+   font-family: secondary;
+   src: url();
+ }
+ * {
+   box-sizing: border-box;
+ }
+ body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2em;
+ }
+
+ .resalt:hover {
+    color: rosybrown;
+ }
+
+ #wrapper {
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    background-color: #F5DEB4;
+ }
+ blockquote {
+   border-left: 1px solid black ;
+   font-style: italic;
+ }
+ dt {
+    font-variant: small-caps;
+   font-weight: bold;
+ }
