@@ -15,14 +15,18 @@
    font-family: secondary;
    src: url();
  }
+ 
  * {
    box-sizing: border-box;
  }
+ 
  body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 1.2em;
+    background-image: url(../images/patternDesign.jpg);
+    background-size: 50%;
  }
 
  .resalt:hover {
@@ -35,11 +39,49 @@
     padding: 2%;
     background-color: #F5DEB4;
  }
+ .center {
+  text-align: center;
+}
+
+#wrapper img {
+   text-align: center;
+   width: 50%;
+   height: 60%;
+   /* margin: 0 auto; */
+ }
  blockquote {
+   padding: 1%;
    border-left: 1px solid black ;
    font-style: italic;
+   background-color: #f5deb48b;
+
+ }
+ ul{
+  /* para poner un tipo de lista distinto */
+  list-style-image: url(../images/cuchara-removebg-preview.png);
+ }
+
+ ol li{
+  list-style: georgian;
+ }
+ blockquote:hover {
+   background-color: #e3b5608c;
+   color: aqua;
  }
  dt {
-    font-variant: small-caps;
-   font-weight: bold;
+  font-variant: small-caps;
+  font-weight: bold;
  }
+
+/* RESPONSIVIDAD */
+/* VAMOS A HACER QUE EL WRAPERS PASE EL 100% DEL VW */
+
+@media only screen and (width<700px) {
+  #wrapper{
+    width: 100%;
+  }
+  #wrapper img {
+    width: 100%;
+
+  } 
+}
