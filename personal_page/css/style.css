@@ -107,28 +107,28 @@ blockquote {
     overflow: hidden;
 }
 
-/**--------------------------------------------
- *               CONTAINER
- *---------------------------------------------**/
+/**=======================================================================================================================
+ *todo                                                 CONTAINER
+ *=======================================================================================================================**/
 
 .container{
+    font-family: tesla;
     color: rgb(122, 128, 132);
     display: flex;
     flex-direction: column;
+    margin: 1.3rem auto;
     width: 40%;
-    margin: 0 auto;
     text-align: center;
     /* height: fit-content; */
     background-color: rgba(39, 46, 60, 1);
     gap: 50px;
-    margin-top: 1.3rem;
 }
 
 div.container section h1 {
     text-align: center;
-    font-family: tesla;
     margin-top: 1.1rem;
 }
+
 div.container section h2 {
     font-family: tesla;
     margin-bottom: 1rem;
@@ -146,7 +146,6 @@ a {
     color: inherit;
 }
 
-
 /**--------------------------------------------
  *?              FOOTER
  *---------------------------------------------**/
@@ -162,7 +161,6 @@ footer div  {
     justify-content: center;
 }
 
-
 footer div.footer_container div{
     padding: 50px;
 }
@@ -175,7 +173,6 @@ footer div.footer_container div{
     blockquote{
         top: 70%;
         left: 1%;
-
         transition: left 1s;
         transition: top 1s;
     }
@@ -184,7 +181,6 @@ footer div.footer_container div{
     blockquote{
         top: 80%;
         transition: top 1s;
-
     }
 
     nav ul {
@@ -208,5 +204,4 @@ footer div.footer_container div{
         text-align: justify;
         margin-top: 1.3rem;
     }
-        
 }
