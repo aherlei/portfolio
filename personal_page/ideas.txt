@@ -1,0 +1,36 @@
+Página principal
+
+Sobre mi mismo:
+    No tiene menu, solo el fondo y el boton
+        Fondo gradiente con un boton en el centro rojo estilo caricatura
+        El boton es rojo con bordes blancos con relieve como si fuese real y cuando se pulse hace la animacion de pulsar.
+    La web debe tener una fuente tipo maquina o similar a pixel art, estaria guay.
+    Mirar si puedo hacer un icono mio pixel art, mira la web de adove probando subir una foto mia y convertirla a pixel art.
+    
+    Funcionamiento:
+        Cuando accedes a la Página sale un mensaje que pndria para seguir adelante pulse el boton.
+        Una vez se pula el botón entra en lo que seria mi portfolio:
+            Aparece el siguiente mensaje: Bienvenido al portfolio de Toni.
+
+Sobre Nicola Tesla:
+    Tiene un menu de navegación (fondo negro y fuente en verdana por ejemplo) que contiene:
+    - Historia
+    - Quien es
+    - Inventos
+    - Curiosidades
+    - Controversia (como le robaron inventos y cosas asis)
+    - Enlaces de interes 
+    - Bibliografía
+    - cuotes
+    Una Hero section con una foto suya, siguiendo la regla de los tercios para que se adapte y se quede centrado como la web de los vikingos que nos ha enseñañdo Pilar.
+
+Sobre tecnologia NFC:
+    Menu con:
+        - Que es
+        - Funcionamiento y usos
+        - Implementacion y futuro
+        - Historia
+        - Dispositivos o elementos que lo contienen
+        - Seguridad
+    
+

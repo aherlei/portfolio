@@ -1,1 +1,2 @@
-puedo añadir menu desplegable en cada apartado
+- Puedo añadir menu desplegable en cada apartado
+- Separar la pagina marron del top y hacerle un efecto sombra como si fuese una hoja de papel

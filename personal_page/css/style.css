@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(39, 46, 60, 1);
+}
+
+/**------------------------------------------------------------------------
+ *                           FONTS
+ *------------------------------------------------------------------------**/
+
+@font-face {
+    font-family: quote;
+    src: url(../fonts/EduTASBeginner-Regular.ttf);
+    font-family: tesla;
+    src: url(../fonts/Arimo-Medium.ttf);
+}
+
+/**------------------------------------------------------------------------
+ *todo                           SECTION HEADER
+ *------------------------------------------------------------------------**/
+header{
+    width: 100wh;
+}
+nav {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: space-between;
+    box-sizing: content-box;
+    padding: 1%;
+    display: flex;
+}
+nav .icon {
+    font-family: tesla;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 1.3em;
+    justify-content: flex-start;
+}
+
+nav .icon:hover {
+    background-image: url(../img/Rayo.gif);
+    width: auto;
+    background-position: center;
+}
+
+nav ul {
+    font-family: tesla;
+    flex: 1;
+    justify-content: start;
+    margin-left: 2em;
+    gap: 10px;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 1%;
+    vertical-align: middle;
+    margin: auto 0;
+}
+
+nav ul li:hover {
+    cursor: grab;
+    color: rgb(131, 116, 243);
+    background-color: rgba(240, 248, 255, 0.185);
+    border: 1px solid rgb(41, 41, 42);
+    border-radius: 10px;
+    background-image: url(../img/Rayo.gif);
+    width: auto;
+    background-position: center;
+}
+
+
+/**=======================================================================================================================
+ *todo                                                 Hero Section
+ *=======================================================================================================================**/
+
+#hero_section{
+    background-image: url(../img/nicola_wall.jpg);
+    height: 100vh;
+    background-position: 70%;
+    background-repeat: no-repeat;;
+/*     background-size: cover;
+ */    position: relative;
+}
+
+div .quote {
+    /* height: 100vh; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+blockquote {
+    color: aliceblue;
+    font-family: quote;
+    font-size: 1.2rem;
+    text-shadow: 9px 10px 9px black;
+    text-shadow: -9px -10px -9px black;
+    position: absolute;
+    top: calc(100vh - 50%);
+    /* left: 5%; */
+    width: 200px;
+    overflow: hidden;
+}
+
+/**--------------------------------------------
+ *               CONTAINER
+ *---------------------------------------------**/
+
+.container{
+    color: rgb(122, 128, 132);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    /* height: fit-content; */
+    background-color: rgba(39, 46, 60, 1);
+    gap: 50px;
+    margin-top: 1.3rem;
+}
+
+div.container section h1 {
+    text-align: center;
+    font-family: tesla;
+    margin-top: 1.1rem;
+}
+div.container section h2 {
+    font-family: tesla;
+    margin-bottom: 1rem;
+}
+div.container section p {
+    margin-top: 1.1rem;
+}
+
+.container ul li {
+    text-align: start;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/**--------------------------------------------
+ *?              FOOTER
+ *---------------------------------------------**/
+
+footer{
+    background-color: rgb(131, 116, 243);
+}
+
+footer div  {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+footer div.footer_container div{
+    padding: 50px;
+}
+
+/**------------------------------------------------------------------------
+ *todo                           medias querys
+ *------------------------------------------------------------------------**/
+
+@media only screen and (width<828px) {
+    blockquote{
+        top: 70%;
+        left: 1%;
+
+        transition: left 1s;
+        transition: top 1s;
+    }
+}
+@media only screen and (width<615px) {
+    blockquote{
+        top: 80%;
+        transition: top 1s;
+
+    }
+
+    nav ul {
+        /* display: block; */
+        /* position: absolute; */
+        left: -20px;
+        top: 5%;
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+        z-index: 5;
+    }
+    nav ul li {
+        padding: 5px;
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        text-align: justify;
+        margin-top: 1.3rem;
+    }
+        
+}

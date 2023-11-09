@@ -8,12 +8,12 @@
  *------------------------------------------------------------------------**/
 
  @font-face {
-   font-family: main;
-   src: url();
+   font-family: title;
+   src: url(../fonts/PlaypenSans-Regular.ttf);
  }
  @font-face {
-   font-family: secondary;
-   src: url();
+   font-family: normally;
+   src: url(../fonts/Roboto-Light.ttf);
  }
  
  * {
@@ -27,17 +27,22 @@
     font-size: 1.2em;
     background-image: url(../images/patternDesign.jpg);
     background-size: 50%;
+    font-family: normally;
  }
 
- .resalt:hover {
-    color: rosybrown;
+.resalt:hover {
+  color: rosybrown;
  }
-
+ 
  #wrapper {
     width: 80%;
     margin: auto;
     padding: 2%;
     background-color: #F5DEB4;
+ }
+ 
+ #wrapper .resalt {
+   font-family: title;
  }
  .center {
   text-align: center;
@@ -47,7 +52,7 @@
    text-align: center;
    width: 50%;
    height: 60%;
-   /* margin: 0 auto; */
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
  }
  blockquote {
    padding: 1%;
@@ -63,6 +68,7 @@
 
  ol li{
   list-style: georgian;
+  margin: 1.2em 0;
  }
  blockquote:hover {
    background-color: #e3b5608c;

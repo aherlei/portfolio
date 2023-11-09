@@ -1,0 +1,61 @@
+/**----------------------------------------------
+ * ?                    ABOUT
+ * @author      : 
+ * @email       : 
+ * @repo        : 
+ * @createdOn   : 
+ * @description : 
+ *---------------------------------------------**/
+
+
+ /*---------------------------- external font ----------------------------*/
+ 
+ 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+#scenario {
+    background-image: url(../img/layers-of-fear-wallpapers.jpg);
+    background-color: black;
+    width:100vw;
+    height:100%;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#door {
+    position: relative;
+    top: 34%;
+    left: 47.8%;
+    width: 60px;
+    height: 160px;
+    border: 2px solid purple;
+}
+#lamp {
+    position: relative;
+    top: -75px;
+    left: 47.8%;
+    width: 60px;
+    height: 50px;
+    border: 2px solid purple;
+}
+
+#hand {
+    position: absolute;
+    top: 300px;
+    width: 60px;
+    height: 50px;
+    left: 800px;
+    visibility: hidden;
+}
