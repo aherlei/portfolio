@@ -84,8 +84,8 @@ nav ul li:hover {
     height: 100vh;
     background-position: 70%;
     background-repeat: no-repeat;;
-/*     background-size: cover;
- */    position: relative;
+    background-size: cover;
+    position: relative;
 }
 
 div .quote {
