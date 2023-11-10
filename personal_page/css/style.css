@@ -183,6 +183,10 @@ footer div.footer_container div{
         transition: top 1s;
     }
 
+    #hero_section{
+        background-size: auto;
+    }
+
     nav ul {
         /* display: block; */
         /* position: absolute; */
