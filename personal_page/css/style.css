@@ -163,6 +163,11 @@ footer div  {
 
 footer div.footer_container div{
     padding: 50px;
+    width: 25%;
+}
+
+i {
+    font-size: 2rem;
 }
 
 /**------------------------------------------------------------------------
