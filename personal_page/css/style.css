@@ -192,6 +192,7 @@ i {
 
     #hero_section{
         background-size: auto;
+        background-position: 63%;
     }
 
     nav ul {
@@ -201,7 +202,6 @@ i {
         gap: 0;
         position: absolute;
         flex-direction: column;
-        /* background: linear-gradient(0.25turn, rgba(2,0,36,0.23245794899991246) 0%, rgba(10,10,50,0.5966036072632177) 50%, rgba(0,0,0,0.2912814784116772) 100%); */
         background: linear-gradient(rgba(2, 0, 36, 0.047) 0%, rgba(10,10,50,0.5966036072632177) 70%, rgba(0, 0, 0, 0) 100%);
 /*         background: linear-gradient(#484848b5, #ffc0cb00);
  */        border-radius: 22px;
@@ -216,7 +216,7 @@ i {
 
     .container{
         width: 80%;
-        margin: 0 auto;
+        margin: 1.3rem auto;
         text-align: justify;
         margin-top: 1.3rem;
     }
