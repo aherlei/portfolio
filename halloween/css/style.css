@@ -13,8 +13,11 @@
  @font-face {
     font-family: terror;
     src: url(../fonts/Unthinkers.otf);
-    
-    
+       
+ }
+ @font-face {
+    font-family: anika;
+    src: url(../fonts/ARUNIKA.otf);
  }
 
 * {
@@ -25,13 +28,20 @@
 
 body {
     height: 100vh;
+    width: 100wh;
+    background-color: black;
+}
+
+.controls {
+    text-align: center;
 }
 
 #scenario {
+    top: 50px;
+    margin: 0 auto;
     background-image: url(../img/layers-of-fear-wallpapers.jpg);
-    background-color: black;
-    width:100vw;
-    height:100%;
+    width: 1497px;
+    height: 600px;
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,25 +55,41 @@ body {
     left: 47.8%;
     width: 60px;
     height: 160px;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 
 
-#hand {
+#flautilla {
     position: absolute;
-    top: 300px;
+    top: 200px;
     width: 200px;
     height: 200px;
-    left: 800px;
+    left: 630px;
     visibility: hidden;
 }
+/* MANOS */
+
 .hands {
+    display: none;
     position: absolute;
+}
+#hand_1 {
     top: 300px;
     width: 200px;
     height: 200px;
     left: 800px;
-    visibility: hidden;
+}
+#hand_3 {
+    top: 300px;
+    width: 200px;
+    height: 200px;
+    right: 100px;
+}
+#hand_4 {
+    top: 250px;
+    width: 200px;
+    height: 200px;
+    right: 100px;
 }
 
 #spider {
@@ -80,35 +106,58 @@ body {
     left: 47.8%;
     width: 60px;
     height: 160px;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
+
+/* LAMPARA */
 #techo {
     position: absolute;
     top: 30px;
     left: 47.4%;
     width: 60px;
     height: 50px;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 #lamp {
     opacity: 80%;
     position: absolute;
-    top: -20px;
+    top: -90px;
     left: 580px;
     width: 318px;
     height: 230px;
     visibility: hidden;
 }
 
+
+
 audio {
     opacity: 30%;
-    width: 150px;
-    height: 30px;
+    height: 13px;
     display: inline;
 
 }
 
-/* ANIMACIONES */
+/* ANIMACIONES Y TEXTOS */
+.start {
+    display: inline;
+    color: aliceblue;
+    font-family: anika;
+    font-size: 30px;
+
+}
+#turn_on {
+    font-family: terror;
+    color: yellow;
+    font-size: 20px;
+    position: absolute;
+    top: -50px;
+    left: 800px;
+
+
+}
+.look {
+    display: none;
+}
 
 #saludo {
     font-family: terror;

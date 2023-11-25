@@ -10,10 +10,8 @@
 
 </head>
 <body>
-    <!-- this exercise is made just for fun UHAHAHAHA -->
-    <!-- WARNING_ it's nor RESPONSIVE, only for computers & laptops -->
-    <!-- I have to search a wallpaper image -->
-    <div id="scenario">
+    <div class="controls">
+        <p class="start">Press any button</p>
         <audio id="click" controls>
             <source src="sound/click-button-140881.mp3" type="audio/mp3">
         </audio>
@@ -23,27 +21,38 @@
         <audio id="spidersound" controls>
             <source src="sound/wings-of-insects-45540.mp3" type="audio/mp3">
         </audio>
-        <p id="saludo"> <span>
-            welcome to death row
-        </span>
-        </p>
-        <img src="img/flautilla.gif" alt="" id="hand">
-        <div id="door" onmouseover="show('hand'); sound('dooropen') " onmouseout="hide('hand'); silence('dooropen')">
-            <!-- nothing inside -->
+        <p class="start">to be scared</p>
+    </div>
+    <div id="scenario">
+        <p id="saludo"> <span> welcome to death row</span></p>
+        <p id="turn_on">Don't turn on the light</p>
+
+        <img src="img/flautilla.gif" alt="" id="flautilla">
+        <div id="door" onmouseover="show('flautilla'); sound('dooropen') " onmouseout="hide('flautilla'); silence('dooropen')">
         </div>
        
-        <!-- were going to fiz an specific area for an event, for example, the door... -->
-        
-        
         <img src="img/spiderNoFondo.gif" alt="spider moving" id="spider">
         <div id="floor" onmouseover="show('spider'); sound('spidersound') " onmouseout="hide('spider'); silence('spidersound')">
         </div>
         
         <img src="img/luz.png" alt="lucecilla" id="lamp">
-        <div id="techo" onmouseover="showTwoElements('lamp', 'hand_1'); sound('click') " onmouseout="hide('lamp'),silence('click')">
+        <div id="techo" 
+        onmouseover="
+            show('lamp'); 
+            sound('click'); 
+            showTwoElments();
+            none('turn_on')" 
+        onmouseout="
+            hide('lamp');
+            silence('click');
+            hiddenElments()">
         </div>
-        
+        <!-- MANOS -->
         <img src="img/manilla_no_fondo.gif" alt="hand moving" id="hand_1" class="hands">
+        <img src="img/mano_der.gif" alt="hand moving" id="hand_2" class="hands">
+        <img src="img/mano_izq.gif" alt="hand moving" id="hand_3" class="hands">
+        <img src="img/manos_izq.gif" alt="hand moving" id="hand_4" class="hands">
+        <img src="img/manos_no_fondo.gif" alt="hand moving" id="hand_5" class="hands">
     </div>
 </body>
 </html>
