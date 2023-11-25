@@ -2,28 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
     <title>Halloween</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon/skull.png" type="image/x-icon">
+    <script src="js/Halloween.js"></script>
+
 </head>
 <body>
     <!-- this exercise is made just for fun UHAHAHAHA -->
     <!-- WARNING_ it's nor RESPONSIVE, only for computers & laptops -->
     <!-- I have to search a wallpaper image -->
     <div id="scenario">
-        <img src="img/crippyhand.gif" alt="" id="hand">
-        <div id="door" onmouseover="show('hand'); sound('dooropen') " onmouseout="hide('hand')">
+        <audio id="click" controls>
+            <source src="sound/click-button-140881.mp3" type="audio/mp3">
+        </audio>
+        <audio id="dooropen" controls>
+            <source src="sound/halloween-impact-05-93808.mp3" type="audio/mp3">
+        </audio>
+        <audio id="spidersound" controls>
+            <source src="sound/wings-of-insects-45540.mp3" type="audio/mp3">
+        </audio>
+        <p id="saludo"> <span>
+            welcome to death row
+        </span>
+        </p>
+        <img src="img/flautilla.gif" alt="" id="hand">
+        <div id="door" onmouseover="show('hand'); sound('dooropen') " onmouseout="hide('hand'); silence('dooropen')">
             <!-- nothing inside -->
         </div>
-        <audio id="dooropen">
-            <source src="sound/door-43633.mp3" type="audio/mp3">
-        </audio>
+       
         <!-- were going to fiz an specific area for an event, for example, the door... -->
-        <div id="lamp">
-            <!--  -->
+        
+        
+        <img src="img/spiderNoFondo.gif" alt="spider moving" id="spider">
+        <div id="floor" onmouseover="show('spider'); sound('spidersound') " onmouseout="hide('spider'); silence('spidersound')">
         </div>
+        
+        <img src="img/luz.png" alt="lucecilla" id="lamp">
+        <div id="techo" onmouseover="showTwoElements('lamp', 'hand_1'); sound('click') " onmouseout="hide('lamp'),silence('click')">
+        </div>
+        
+        <img src="img/manilla_no_fondo.gif" alt="hand moving" id="hand_1" class="hands">
     </div>
 </body>
-<script src="js/Halloween.js"></script>
 </html>

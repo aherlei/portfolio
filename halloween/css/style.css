@@ -1,16 +1,21 @@
 /**----------------------------------------------
  * ?                    ABOUT
- * @author      : 
+ * @author      : Antonio Jesús Heredia Leiva
  * @email       : 
  * @repo        : 
  * @createdOn   : 
- * @description : 
+ * @description : Página Halloween
  *---------------------------------------------**/
 
 
  /*---------------------------- external font ----------------------------*/
  
- 
+ @font-face {
+    font-family: terror;
+    src: url(../fonts/Unthinkers.otf);
+    
+    
+ }
 
 * {
     box-sizing: border-box;
@@ -28,7 +33,7 @@ body {
     width:100vw;
     height:100%;
     overflow: hidden;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -42,20 +47,90 @@ body {
     height: 160px;
     border: 2px solid purple;
 }
-#lamp {
-    position: relative;
-    top: -75px;
-    left: 47.8%;
-    width: 60px;
-    height: 50px;
-    border: 2px solid purple;
-}
+
 
 #hand {
     position: absolute;
     top: 300px;
-    width: 60px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     left: 800px;
     visibility: hidden;
 }
+.hands {
+    position: absolute;
+    top: 300px;
+    width: 200px;
+    height: 200px;
+    left: 800px;
+    visibility: hidden;
+}
+
+#spider {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    bottom: 80px;
+    left: 700px;
+    visibility: hidden;
+}
+#floor {
+    position: absolute;
+    top: 70%;
+    left: 47.8%;
+    width: 60px;
+    height: 160px;
+    border: 2px solid purple;
+}
+#techo {
+    position: absolute;
+    top: 30px;
+    left: 47.4%;
+    width: 60px;
+    height: 50px;
+    border: 2px solid purple;
+}
+#lamp {
+    opacity: 80%;
+    position: absolute;
+    top: -20px;
+    left: 580px;
+    width: 318px;
+    height: 230px;
+    visibility: hidden;
+}
+
+audio {
+    opacity: 30%;
+    width: 150px;
+    height: 30px;
+    display: inline;
+
+}
+
+/* ANIMACIONES */
+
+#saludo {
+    font-family: terror;
+    color: aliceblue;
+    opacity: 50%;
+    animation-name: saludo;
+    animation-duration: 5s;
+    position: absolute;
+    text-align: center;
+    left: 630px;
+    
+}
+
+@keyframes saludo {
+    from {
+        opacity: 0;
+        left: 0;
+    }
+    to {
+        color: brown;
+        opacity: 1;
+        left: 630px;
+    }
+}
+
