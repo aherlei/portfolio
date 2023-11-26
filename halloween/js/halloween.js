@@ -1,3 +1,5 @@
+const hands = document.getElementsByClassName('hands')
+
 
 function show(element) {
     document.getElementById(element).style.visibility = "visible"
