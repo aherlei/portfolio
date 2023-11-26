@@ -1,6 +1,3 @@
-const hands = document.getElementsByClassName('hands')
-const element = document.getElementById(element)
-
 
 function show(element) {
     document.getElementById(element).style.visibility = "visible"
