@@ -147,7 +147,7 @@ audio {
 }
 #turn_on {
     font-family: terror;
-    color: yellow;
+    color: green;
     font-size: 20px;
     position: absolute;
     top: -50px;
