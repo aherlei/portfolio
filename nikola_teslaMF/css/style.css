@@ -1,0 +1,359 @@
+/**------------------------------------------------------------------------
+ *                           GENERAL FORMATS
+ *------------------------------------------------------------------------**/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(39, 46, 60, 1);
+}
+
+/**------------------------------------------------------------------------
+ *                           FONTS
+ *------------------------------------------------------------------------**/
+
+@font-face {
+    font-family: quote;
+    src: url(../fonts/EduTASBeginner-Regular.ttf);
+    font-family: tesla;
+    src: url(../fonts/Arimo-Medium.ttf);
+}
+
+/**------------------------------------------------------------------------
+ *todo                           SECTION HEADER
+ *------------------------------------------------------------------------**/
+header{
+    width: 100wh;
+}
+nav {
+    color: aliceblue;
+    box-sizing: content-box;
+    background-color: rgba(0, 0, 0, 0);
+    width: auto;
+    display: flex;
+    padding: 1%;
+}
+nav .icon {
+    width: auto;
+    font-family: tesla;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 1.3em;
+    /* mirar la posicion */
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 2;
+
+}
+
+.icon span {
+    width: 100%;
+}
+
+.icon span:hover {
+    background-image: url(../img/Rayo.gif);
+
+}
+
+#transition {
+    transition: 1s;
+}
+#menu_wrap {
+    font-family: tesla;
+    margin-left: 2em;
+    /* background: linear-gradient(0.25turn, rgba(2,0,36,0.23245794899991246) 0%, rgba(10,10,50,0.5966036072632177) 50%, rgba(0,0,0,0.2912814784116772) 100%); */
+    border-radius: 6px;
+    position: absolute;
+    right: 2%;
+    top: 6%;
+    position: fixed;
+    z-index: 5;
+    background-color: rgb(122, 128, 132);
+    width: 150px;
+    height: auto;
+}
+
+.menu  {
+    right: 1%;
+    text-align: right;
+}
+
+nav ul li {
+    margin-right: 5px;
+    list-style: none;
+    padding: 0.2em 1em;    
+    margin: auto 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+nav ul li a:hover, .icon span a {
+    text-decoration: none;
+}
+    
+nav ul li:hover {
+    border: 1px solid rgb(41, 41, 42);
+    cursor: grab;
+    color: rgb(131, 116, 243);
+    background-color: rgba(240, 248, 255, 0.185);
+    background-image: url(../img/Rayo.gif);
+    width: auto;
+    background-position: center;
+    transition: 1s;
+}
+
+.line {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+#menu_brg {
+    cursor: pointer;
+    justify-content: flex-end;
+    position: absolute;
+    position: fixed;
+    z-index: 4;
+    right: 2%;
+}
+
+
+/**=======================================================================================================================
+ *todo                                                 Hero Section
+ *=======================================================================================================================**/
+
+#hero_section{
+    background-size: auto;
+    background-position: 63%;
+    background-image: url(../img/nicola_wall.jpg);
+    height: 100vh;
+}
+
+div .quote {
+    /* height: 100vh; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn_contain {
+    color: aliceblue;
+    font-size: 1.2rem;
+    position: absolute;
+    width: 200px;
+    top: 80%;
+    transition: top 1s;
+    z-index: 1;
+}
+
+.btn_cta {
+    border-radius: 3px;
+    border: none;
+    font-family: tesla, Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: 1em;
+    padding: 0.6em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 10px 10px rgba(53, 43, 43, 0.232);
+    box-shadow: 10px 10px rgba(142, 84, 84, 0.232);
+    background-color: rgb(132, 118, 143);
+    background-position: 100%;
+    transition: 0.6s;
+}
+.btn_cta:hover {
+    box-shadow: 3px 3px black;
+    transition: 0.4s;
+    color: black;
+    background-image: url(../img/Rayo.gif);
+    
+
+}
+
+/**=======================================================================================================================
+ *todo                                                 CONTAINER
+ *=======================================================================================================================**/
+
+.main_container{
+    position: relative;
+    font-family: tesla;
+    color: rgb(122, 128, 132);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(39, 46, 60, 1);
+    gap: 50px;
+    z-index: 3;
+}
+
+.wrap_container{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.wrap_container section {
+    margin: 3em 1em;
+}
+
+div.main_container section h1 {
+    text-align: center;
+    margin-top: 1.1rem;
+}
+
+div.main_container section h2 {
+    font-family: tesla;
+    margin-bottom: 1rem;
+}
+div.main_container section p {
+    margin-top: 1.1rem;
+}
+
+.main_container ul li {
+    text-align: start;
+}
+
+a {
+    text-decoration: none ;
+    color: aliceblue !important;
+}
+
+.d-block {
+    height: 20em;/*todo cambiar en  tablet y pc*/
+}
+
+/**--------------------------------------------
+ *?              FOOTER
+ *---------------------------------------------**/
+
+footer{
+    background-color: rgb(131, 116, 243);
+}
+
+/* footer div  {
+    display: grid;
+    margin: 0 auto;
+}
+
+.col-4 {
+    grid-template-columns: auto auto auto auto;
+    
+} */
+footer div.footer_container div{
+    padding: 10px 0 10px 30px;
+    padding-left: 30px;
+}
+
+i {
+    font-size: 2rem;
+}
+
+/**------------------------------------------------------------------------
+ *todo                           medias querys
+ *------------------------------------------------------------------------**/
+ /* de tablet en adelante */
+ @media only screen and (width>600px) {
+    #menu_brg {
+        display: none;
+    }
+    #hero_section{
+        background-position: 70%;
+        background-repeat: no-repeat;;
+        background-size: cover;
+        position: relative; 
+    }
+    #menu_wrap {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: static;
+    }
+    .menu {
+        display: contents;
+        justify-content: flex-end;
+    }
+
+    .wrap_container {
+        width: 50%;
+    }
+    #menu_wrap {
+        background-color: transparent;
+        margin-left: 0;
+    }
+
+    #carrusel_container {
+        max-width: 60%;   
+        min-width: none;     
+        margin: 0 auto;
+        height: auto;
+    }
+    .carousel-item img{
+        width: 80%;
+    }
+    nav .icon {
+        z-index: 4;
+    }
+
+ }
+
+ @media only screen and (width>800px) {
+    #carrusel_container {
+        max-width: 483px;        
+    }
+    .btn_contain{
+        top: calc(100vh - 35%);
+    
+    }
+ }
+
+/* @media only screen and (width<828px) {
+    blockquote{
+        top: 70%;
+        left: 1%;
+        transition: left 1s;
+        transition: top 1s;
+    }
+} */
+/* 
+@media only screen and (width<615px) {
+    blockquote{
+        top: 80%;
+        transition: top 1s;
+    }
+
+    #hero_section{
+        background-size: auto;
+        background-position: 63%;
+    }
+
+    nav ul {
+        left: 5px;
+        margin: 0;
+        top: 5%;
+        gap: 0;
+        position: absolute;
+        flex-direction: column;
+        background: linear-gradient(rgba(2, 0, 36, 0.047) 0%, rgba(10,10,50,0.5966036072632177) 70%, rgba(0, 0, 0, 0) 100%);
+        border-radius: 22px;
+        height: 95%;
+        width: 29%;
+        min-width: min-content;
+    }
+    nav ul li {
+        padding: 5px;
+        margin: 0.5rem 0;
+    }
+
+    .container{
+        width: 80%;
+        margin: 1.3rem auto;
+        text-align: justify;
+        margin-top: 1.3rem;
+    } 
+} */
+
