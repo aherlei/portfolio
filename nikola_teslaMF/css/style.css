@@ -7,8 +7,12 @@
     padding: 0;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
-    background-color: rgba(39, 46, 60, 1);
+    background-color: rgba(39, 46, 60, 1) !important;
 }
 
 /**------------------------------------------------------------------------
@@ -72,8 +76,8 @@ nav .icon {
     position: fixed;
     z-index: 5;
     background-color: rgb(122, 128, 132);
-    width: 150px;
-    height: auto;
+    /* width: 150px;
+    height: auto; */
 }
 
 .menu  {
@@ -88,20 +92,22 @@ nav ul li {
     margin: auto 0;
     border-radius: 10px;
     text-decoration: none;
+    /* border: 1px solid rgb(41, 41, 42); */
+
 }
 nav ul li a:hover, .icon span a {
     text-decoration: none;
 }
     
 nav ul li:hover {
-    border: 1px solid rgb(41, 41, 42);
+    /* border: 1px solid rgb(41, 41, 42); */
     cursor: grab;
     color: rgb(131, 116, 243);
     background-color: rgba(240, 248, 255, 0.185);
     background-image: url(../img/Rayo.gif);
     width: auto;
     background-position: center;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .line {
@@ -180,7 +186,8 @@ div .quote {
 .main_container{
     position: relative;
     font-family: tesla;
-    color: rgb(122, 128, 132);
+    /* color: rgb(122, 128, 132); */
+    color: rgb(167 175 181);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -190,6 +197,7 @@ div .quote {
     gap: 50px;
     z-index: 3;
 }
+
 
 .wrap_container{
     width: 80%;
@@ -201,9 +209,10 @@ div .quote {
     margin: 3em 1em;
 }
 
-div.main_container section h1 {
+.main_container section h1 {
     text-align: center;
     margin-top: 1.1rem;
+    font-size: 4em;
 }
 
 div.main_container section h2 {
@@ -226,38 +235,125 @@ a {
 .d-block {
     height: 20em;/*todo cambiar en  tablet y pc*/
 }
+.cards_container{
+    width: 100%;
+}
+.carousel-control-next, .carousel-control-prev{
+    opacity: 100 !important;
+}
+
+section {
+    padding: 1.5em 0;
+}
 
 /**--------------------------------------------
  *?              FOOTER
  *---------------------------------------------**/
 
-footer{
+#footer_1{
     background-color: rgb(131, 116, 243);
+    padding: 2em 0;
 }
-
-/* footer div  {
-    display: grid;
+.footer_1_container{
     margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto ;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 8em;
+    grid-template-columns: 1fr;
+        grid-template-areas: 
+        " social    "
+        " iframe    "
+        " see_again "
+        " modal     ";
 }
-
-.col-4 {
-    grid-template-columns: auto auto auto auto;
+.social_links_flex{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    flex-wrap: nowrap;
+    flex-direction: row;
     
-} */
-footer div.footer_container div{
-    padding: 10px 0 10px 30px;
-    padding-left: 30px;
+}
+.tittle_social, .tittle_video, .tittle_navigation{
+    font-size: 3em;
+    font-family: tesla;
+    color: antiquewhite;
+    margin-bottom: 20px;
 }
 
-i {
-    font-size: 2rem;
+.col_{
+    border: 1px solid antiquewhite;
+    border-radius: 5px;
+    /* padding: 20px; */
+    margin-top: 3em;
+    box-shadow: 5px 5px black;
+    background-position: center;
+    
+}
+
+.col_:hover {
+    background-image: url(../img/Rayo.gif);
+    transition: 0.2s;
+}
+
+.social_links_flex div a i{
+    font-size: 3rem;
+    border: 1px solid antiquewhite;
+    border-radius: 5px;
+    display: inline-flex;
+    padding: 10px;
+}
+.social_links_flex div a i:hover{
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+.see_again_links_flex{
+    justify-content: center;
+    display: flex;
+    gap: 1.2em;
+    flex-wrap: wrap;
+}
+.see_again_links_flex a{
+    font-size: 1.8em;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 10px 1px;
+    text-decoration: none !important;
+
+    
+}
+.see_again_links_flex a:hover{
+    box-shadow: 5px 5px white;
+    transition: 0.4s;
+}
+
+#myBtn{
+    margin: 0 auto;
+    width: fit-content;
+    color: black;
+    background-color: beige;
+}
+
+.modal_container{
+    /* margin: 0 auto;
+    padding-top: 5rem; */
+    align-self: center;
+}
+
+#footer_2{
+    background-color: rgba(39, 46, 60, 1);
+    color: aliceblue;
 }
 
 /**------------------------------------------------------------------------
  *todo                           medias querys
  *------------------------------------------------------------------------**/
  /* de tablet en adelante */
- @media only screen and (width>600px) {
+ @media only screen and (width>845px) {
     #menu_brg {
         display: none;
     }
@@ -298,10 +394,45 @@ i {
     nav .icon {
         z-index: 4;
     }
+    .footer_1_container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        " social  social  "
+        " iframe   iframe "
+        " iframe   iframe "
+        " see_again  modal"
+        " see_again  modal   ";
+    }
+    .social_links_flex{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1em;
+        flex-wrap: wrap;
+        
+    }
+
+    .redes_container{
+        grid-area: social;
+    }
+    .iframe_container{
+        grid-area: iframe;
+    }
+    .see_again_container{
+        grid-area: see_again;
+    }
+    .modal_container{
+        grid-area: modal;
+    }
 
  }
 
- @media only screen and (width>800px) {
+ /* de PC en adelante */
+
+ @media only screen and (width>1100px) {
+    section {
+        padding: 3em 0;
+    }
     #carrusel_container {
         max-width: 483px;        
     }
@@ -309,51 +440,20 @@ i {
         top: calc(100vh - 35%);
     
     }
+    .footer_1_container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        " social iframe see_again "
+        " modal modal modal  "
+        ;
+    }
+    .social_links_flex{
+        flex-direction: row;
+        
+    }
+    
+   
  }
 
-/* @media only screen and (width<828px) {
-    blockquote{
-        top: 70%;
-        left: 1%;
-        transition: left 1s;
-        transition: top 1s;
-    }
-} */
-/* 
-@media only screen and (width<615px) {
-    blockquote{
-        top: 80%;
-        transition: top 1s;
-    }
 
-    #hero_section{
-        background-size: auto;
-        background-position: 63%;
-    }
-
-    nav ul {
-        left: 5px;
-        margin: 0;
-        top: 5%;
-        gap: 0;
-        position: absolute;
-        flex-direction: column;
-        background: linear-gradient(rgba(2, 0, 36, 0.047) 0%, rgba(10,10,50,0.5966036072632177) 70%, rgba(0, 0, 0, 0) 100%);
-        border-radius: 22px;
-        height: 95%;
-        width: 29%;
-        min-width: min-content;
-    }
-    nav ul li {
-        padding: 5px;
-        margin: 0.5rem 0;
-    }
-
-    .container{
-        width: 80%;
-        margin: 1.3rem auto;
-        text-align: justify;
-        margin-top: 1.3rem;
-    } 
-} */
 

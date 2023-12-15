@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="favicon/tower.png">
+
     <!-- OWN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/card.css" >
+
+    <link rel="icon" type="image/x-icon" href="favicon/tower.png">
+    <!-- FONT AWESOME 4.7.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- BOOTSTRAP CSS -->
@@ -43,6 +48,7 @@
             </div>
         </div>
     </header>
+
     <!-- CONTAINER -->
     <div class="main_container">
         <div class="wrap_container">
@@ -50,7 +56,20 @@
                 <a name="who"></a>
                 <h1>Who I am</h1>
                 <p>
-                    Nikola Tesla (1856-1943) was a Serbian-American inventor, electrical engineer, and physicist who made significant contributions to the development of electrical power systems, wireless communication, and numerous other fields. 
+                    Was a Serbian-American inventor, electrical engineer, mechanical engineer, and futurist. He is best-known for his contributions to the design of the modern alternating current (AC) electricity supply system.
+                </p>
+                <p>
+                    Born and raised in the Austrian Empire, Tesla first studied engineering and physics in the 1870s without receiving a degree. He then gaining practical experience in the early 1880s working in telephony and at Continental Edison in the new electric power industry. In 1884 he emigrated to the United States, where he became a naturalized citizen. He worked for a short time at the Edison Machine Works in New York City before he struck out on his own. With the help of partners to finance and market his ideas, Tesla set up laboratories and companies in New York to develop a range of electrical and mechanical devices. His AC induction motor and related polyphase AC patents, licensed by Westinghouse Electric in 1888, earned him a considerable amount of money and became the cornerstone of the polyphase system which that company eventually marketed.
+                </p>
+                <p>
+                    Attempting to develop inventions he could patent and market, Tesla conducted a range of experiments with mechanical oscillators/generators, electrical discharge tubes, and early X-ray imaging. He also built a wirelessly controlled boat, one of the first ever exhibited. Tesla became well known as an inventor and demonstrated his achievements to celebrities and wealthy patrons at his lab, and was noted for his showmanship at public lectures. Throughout the 1890s, Tesla pursued his ideas for wireless lighting and worldwide wireless electric power distribution in his high-voltage, high-frequency power experiments in New York and Colorado Springs. In 1893, he made pronouncements on the possibility of wireless communication with his devices. Tesla tried to put these ideas to practical use in his unfinished Wardenclyffe Tower project, an intercontinental wireless communication and power transmitter, but ran out of funding before he could complete it.
+
+                </p>
+
+                <p>
+                    After Wardenclyffe, Tesla experimented with a series of inventions in the 1910s and 1920s with varying degrees of success. Having spent most of his money, Tesla lived in a series of New York hotels, leaving behind unpaid bills. He died in New York City in January 1943.[8] Tesla's work fell into relative obscurity following his death, until 1960, when the General Conference on Weights and Measures named the International System of Units (SI) measurement of magnetic flux density the tesla in his honor. There has been a resurgence in popular interest in Tesla since the 1990s.[9]
+                </p>
+
                 </p>
             </section>
             <section>
@@ -61,35 +80,81 @@
                     
                     Early Life and Education:
                     <ul>
-                        <li>Nikola Tesla was born on July 10, 1856, in Smiljan, a village in the Austrian Empire (modern-day Croatia). He was the fourth of five children in his family.</li>
-                        <li>He attended the Technical University of Graz and later the University of Prague, where he studied electrical engineering and physics.</li>
+                        <li>Nikola Tesla was born an ethnic Serb in the village of Smiljan, within the Military Frontier, in the Austrian Empire (present day Croatia), on 10 July [O.S. 28 June] 1856.His father, Milutin Tesla (1819 - 1879), was a priest of the Eastern Orthodox Church.</li>
+                        <li>Tesla's mother, Đuka Mandić (1822 - 1892), whose father was also an Eastern Orthodox Church priest, had a talent for making home craft tools and mechanical appliances and the ability to memorize Serbian epic poems. Đuka had never received a formal education. Tesla credited his eidetic memory and creative abilities to his mother's genetics and influence.Tesla's ancestors were from western Serbia, near Montenegro.</li>
+                        <li>Tesla was the fourth of five children. He had three sisters, Milka, Angelina, and Marica, and an older brother named Dane, who was killed in a horse riding accident when Tesla was aged five. In 1861, Tesla attended primary school in Smiljan where he studied German, arithmetic, and religion. In 1862, the Tesla family moved to the nearby Gospić, where Tesla's father worked as parish priest. Nikola completed primary school, followed by middle school. In 1870, Tesla moved to Karlovac[better source needed] to attend high school at the Higher Real Gymnasium where the classes were held in German, as it was usual throughout schools within the Austro-Hungarian Military Frontier</li>
+                        <li>Tesla later wrote that he became interested in demonstrations of electricity by his physics professor. Tesla noted that these demonstrations of this "mysterious phenomena" made him want "to know more of this wonderful force". Tesla was able to perform integral calculus in his head, which prompted his teachers to believe that he was cheating.[28] He finished a four-year term in three years, graduating in 1873.</li>
                     </ul>
-                </p>
-            </section>
-            <section>
-                <a name="invents"></a>
-                <h1>Invents</h1>
-                <p>
-                    <ul>
-                        <li>AC (Alternating Current) power transmission and distribution systems.</li>
-                        <li>The Tesla coil, which generates high-voltage, low-current electricity.</li>
-                        <li>Wireless transmission of electrical power.</li>
-                        <li>The development of radio technologies (although Marconi is often credited with the invention of radio, Tesla had significant contributions).</li>
-                        <li>The Tesla turbine and the bladeless turbine.</li>
-                    </ul>
-                    <p>
-                        <h3>
-                            Wardenclyffe Tower and Wireless Communication:
-                        </h3>
-                        <ul>
-                            <li>Tesla began work on the Wardenclyffe Tower in New York with the aim of creating wireless communication and transmitting electricity wirelessly over long distances. Unfortunately, the project was never completed due to financial constraints.</li>
-                        </ul>   
-                    </p>
                 </p>
             </section>
         </div>
-        <!-- CARRUSEL -->
+    </div>
+
+
+    <div class="main_container cards_container">
+        <section class="section_cards">
+            <a name="invents"></a>
+            <h1>Invents</h1>
+            <div class="wrapper">
+                <div class="cols">
+                    <div class="col_card" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container_card">
+                            <div class="front" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/30/Tesla_boat1.jpg); background-position: cover">
+                                <div class="inner">
+                                    <p>Radiocontrol</p>
+                                    <span>In 1898</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Tesla demonstrated a boat that used a coherer-based radio control</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col_card" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container_card">
+                            <div class="front" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/X-Ray_Photograph_of_Tesla%27s_left_hand.jpg); background-position: cover">
+                                <div class="inner">
+                                    <p>X-ray experiment</p>
+                                    <span>Starting in 1894</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Tesla began investigating what he referred to as radiant energy of "invisible" kinds</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col_card" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container_card">
+                            <div class="front" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Bobine_Tesla_Palais_decouverte.jpg/1920px-Bobine_Tesla_Palais_decouverte.jpg)">
+                                <div class="inner">
+                                    <p>Tesla's bobin</p>
+                                    <span>Patented in 1891</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p> It is used to produce high-voltage, low-current, high-frequency alternating-current electricity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CARRUSEL -->
+    <div class="main_container">
         <section id="carrusel_container">
+            <a name="invents"></a>
+            <h1>Some achievements</h1>
             <div id="carouselExampleControls" class="carousel slide" data-ride="">
                 <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="false">
@@ -112,36 +177,96 @@
                 </a>
             </div>
         </section>
+    </div>
+
+    <div class="main_container">
         <div class="wrap_container">
             <section>
                 <a name="controversy"></a>
                 <h1>Controversy</h1>
+                <h3>War of Currents</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cumque iure eaque quo assumenda quia libero aperiam fugit blanditiis quae aliquid dicta in, quibusdam officia sint, repellat exercitationem nam pariatur.
+                    One of the most significant controversies in Tesla's career was the "War of Currents" between alternating current (AC), advocated by Tesla and his supporter George Westinghouse, and direct current (DC), promoted by Thomas Edison. Edison went to great lengths to discredit AC, even publicly electrocuting animals to demonstrate its dangers, in an attempt to tarnish Tesla and Westinghouse's reputation.
+                </p>
+                <h3> Tesla's Unbuilt Inventions</h3>
+                <p>
+                    Tesla had numerous ideas and designs that were never built or realized. One of the most famous examples is the Wardenclyffe Tower, intended for wireless transmission of energy and communication. The tower was never completed, and Tesla faced financial difficulties that prevented him from realizing many of his ambitious projects.
+                </p>
+                <h3>Tesla and Marconi's Radio Patent Dispute</h3>
+                <p>
+                    
+                    Tesla and Guglielmo Marconi were involved in a patent dispute over the invention of radio. Tesla claimed that Marconi's patents infringed on his own earlier work in wireless communication. The U.S. Supreme Court eventually upheld Tesla's patent, recognizing his contributions to the development of radio.
                 </p>
             </section>
             <section>
                 <a name="curiosities"></a>
                 <h1>Curiosities</h1>
+                <h3>Tesla's Personal Habits and Obsessions:</h3>
+                <p>                    
+                    Tesla was known for his peculiar habits and phobias. He had an aversion to germs and would often wash his hands multiple times. Additionally, he was fascinated with the number three and multiples of three, and he often engaged in numerology and unusual rituals.
+                </p>
+                <h3>Death Ray Speculations:</h3>
+                <p>                    
+                    In his later years, Tesla claimed to have developed a "teleforce" weapon, often referred to as a "death ray." He described it as a defensive weapon that could shoot down aircraft and destroy armies. The specifics of this invention remain unclear, and some consider it to be more of a speculative idea than a realized invention.
+                </p>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt impedit consequatur facilis libero unde perspiciatis quod fuga ullam neque ratione. Deleniti perspiciatis voluptatem expedita cumque non quisquam tempore ipsa fugiat!
-                    Laboriosam sequi hic accusamus dolorum temporibus. Culpa ut quos, quam iste, autem ipsa rem est inventore tempora enim veritatis sed qui aut odit mollitia necessitatibus. Nulla pariatur sint voluptate libero.
 
                 </p>
             </section>
         </div>
-
-        
     </div>
+    </div>
+
+
     <!-- FOOTER -->
     <footer>
-        <div class="footer_container container grid-container">
-            <div class="row center">
-                <div class="col"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="col"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div>
-                <div class="col"><a href="#"><i class="fa-brands fa-github"></i></a></div>
-                <div class="col"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div id="footer_1">
+            <div class="footer_1_container">
+                <div class="footer_col redes_container">
+                    <div class="tittle_social"> Follow me!</div>
+                    <div class="social_links_flex">
+                        <div class="col_"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="col_"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div>
+                        <div class="col_"><a href="#"><i class="fa-brands fa-github"></i></a></div>
+                        <div class="col_"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+                    </div>
+                </div>
+                <div class="footer_col iframe_container">
+                    <div class="iframe tittle_video">Video Resume</div>
+                    <div class="iframe_flex">
+                        <iframe width="" height="" src="https://www.youtube.com/embed/hZGDfaf0LPI?si=yKmPqaLoIyO1D5A_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+                <div class="footer_col see_again_container">
+                    <div class="see_again_links">
+                        <div class="tittle_navigation">See again</div> 
+                        <div class="see_again_links_flex">
+                            <div class="col_page_link"><a href="#who">who is</a></div>
+                            <div class="col_page_link"><a href="#history">history </a></div>
+                            <div class="col_page_link"><a href="#invents">invents</a></div>
+                            <div class="col_page_link"><a href="#controversy">controversy</a></div>
+                            <div class="col_page_link"><a href="#curiosities">curiosities</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_col modal_container">
+                    <button id="myBtn"class="btn_cta">Credits</button>
+    
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Made by Antonio J. Heredia Leiva</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+           
+        <div id="footer_2">
+            <p>© 2023 1º DAW Made by ANTONIO JESUS HEREDIA LEIVA</p>
         </div>
     </footer>
 </body>
