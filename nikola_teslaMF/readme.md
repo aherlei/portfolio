@@ -47,8 +47,8 @@ He creado una barra de navegacion estilada sin fondo y responsiva, desde 0, con 
 Sobre ella he colocado un Call to Action que he estilado a partir de probar colores y estilos hasta dar con uno que a mi me parecia una opcion bastante valida<br>
 
 <h3>Introducción</h3>
-<img src="./bm-readme/mainContain.PNG.png" alt="imagen de hero section" style="width:50%"> <br>
-<img src="./bm-readme/mainContain2.PNG.png" alt="imagen de hero section" style="width:50%"> <br>
+<img src="./bm-readme/mainContain.PNG" alt="imagen de hero section" style="width:50%"> <br>
+<img src="./bm-readme/mainContain2.PNG" alt="imagen de hero section" style="width:50%"> <br>
 <p>He elegido flex para estilar mi contenido principal informativo, hecho en una columna, con datos de Tesla</p>
 <p>Aunque para las cards he decidio decantarme por grid, para el carrusel bootstrap y seguidamente en flex</p>
 
