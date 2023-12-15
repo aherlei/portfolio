@@ -122,10 +122,9 @@ nav ul li:hover {
     cursor: pointer;
     justify-content: flex-end;
     position: absolute;
-    position: fixed;
     z-index: 4;
     right: 2%;
-    font-size: 1.8em;
+    font-size: 1.8rem;
 }
 
 
@@ -207,7 +206,7 @@ div .quote {
 }
 
 .wrap_container section {
-    margin: 3em 1em;
+    margin: 3em 0;
 }
 
 .main_container section h1 {
