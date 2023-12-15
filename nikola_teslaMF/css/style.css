@@ -125,6 +125,7 @@ nav ul li:hover {
     position: fixed;
     z-index: 4;
     right: 2%;
+    font-size: 1.8em;
 }
 
 
