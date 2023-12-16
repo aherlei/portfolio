@@ -266,11 +266,11 @@ section {
     text-align: center;
     gap: 8em;
     grid-template-columns: 1fr;
-        grid-template-areas: 
-        " social    "
-        " iframe    "
-        " see_again "
-        " modal     ";
+    grid-template-areas: 
+    " social    "
+    " iframe    "
+    " see_again "
+    " modal     ";
 }
 .social_links_flex{
     display: flex;
@@ -285,6 +285,7 @@ section {
     font-family: tesla;
     color: antiquewhite;
     margin-bottom: 20px;
+    text-shadow: 6px 6px 4px black;
 }
 
 .col_{
