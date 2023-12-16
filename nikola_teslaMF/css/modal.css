@@ -3,8 +3,9 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 5; /* Sit on top */
-    /* left: 0; */
     top: 0;
+    right: 0;
+    left: 0;
     width: 90%; /* Full width */
     height: 100vh; /* Full height */
     background-color: rgb(0,0,0); /* Fallback color */
