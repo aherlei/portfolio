@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Cien años de soledad",
+      "year": 1967,
+      "autor": "Gabriel García Márquez",
+      "genre": "Realismo mágico"
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "year": 1949,
+      "autor": "George Orwell",
+      "genre": "Distopía"
+    },
+    {
+      "id": 3,
+      "title": "El principito",
+      "year": 1943,
+      "autor": "Antoine de Saint-Exupéry",
+      "genre": "Fábula"
+    },
+    {
+      "id": 4,
+      "title": "Harry Potter y la piedra filosofal",
+      "year": 1997,
+      "autor": "J.K. Rowling",
+      "genre": "Fantasía"
+    },
+    {
+      "id": 5,
+      "title": "To Kill a Mockingbird",
+      "year": 1960,
+      "autor": "Harper Lee",
+      "genre": "Ficción histórica"
+    }
+  ]
+  
