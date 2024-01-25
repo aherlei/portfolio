@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modifiación de datos</title>
+    <title>Modificación de datos</title>
     <link rel="shortcut icon" href="imagen/librillotrans.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/insercion.css">
 </head>
 <body>
-    <h1>Modifiación de libros</h1>
+    <h1>Modificación de libros</h1>
 
     <div class="container" style="max-width: 650px; min-width: 400px;">
         <div class="card">
@@ -16,7 +16,7 @@
                 <form id="myForm" onsubmit="return validar()">
                     <div class="form-group">
                         <label for="title">Nombre:</label>
-                        <input type="text" class="form-control" id="title" placeholder="El señor de los anillos">
+                        <input type="text" class="form-control" id="title" placeholder="Titulo..." value="El seño de los anillos">
                         <label for="gender">Genero</label>
                         <select id="gender">
                             <option value="fantasy">Fantasía</option>
@@ -26,18 +26,17 @@
                             <option value="history">Historico</option>
                         </select>
                         <label for="year">Año</label>
-                        <input type="number" class="form-control" id="year" placeholder="1980">
+                        <input type="number" class="form-control" id="year" placeholder="1980" value="1980">
                         <label for="autor">Autor</label>
-                        <input type="text" class="form-control" id="autor" placeholder="Tolkien">
+                        <input type="text" class="form-control" id="autor" placeholder="Tolkien" value="Tolkien">
                         <label for="codipos">Código del libro</label>
-                        <input type="text" class="form-control" id="codipos" placeholder="44556123">
+                        <input type="text" class="form-control" id="codipos" placeholder="44556123" value="44556123">
                         <br><br>
                         <label for="terminos">Modificación:</label>
                         <input type="checkbox" id="terminos"> <span>Quiero modificar los datos   </span>       
-
                     </div>
                     <br>
-                    <input type="submit" class="btn btn-success btn btn-primary  btn-large" id="button" value="Registrar">
+                    <input type="submit" class="btn btn-success btn btn-primary  btn-large" id="button" value="Aceptar">
                     <input type="reset" class="btn btn-danger btn btn-primary  btn-large" id="button" value="Reiniciar">
                 </form>
             </div>
