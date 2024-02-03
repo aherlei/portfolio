@@ -1,0 +1,75 @@
+/* 
+Antonio J. Heredia Leiva
+*/
+
+/*
+Variables Generales
+*/
+
+@font-face {
+    font-family: coke;
+    src: url(../fonts/Coca\ Cola\ ii.ttf);
+}
+
+@font-face {
+font-family: main;
+src: url(../fonts/Genjutsu.ttf);
+}
+body{
+    background-color: black;
+}
+
+#my_web {
+    font-family: main !important;
+    background-image: url('../images/bg-coke.jpg');
+    background-position: 33% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* 
+Tamaños
+*/
+
+.w-little-px{
+    width: 120px;
+}
+
+.fs-10{
+    font-size:3em ;
+}
+
+.divider{
+    font-size: large;
+    font-weight: 400;
+    height: 20px;
+}
+
+/* 
+COLORS
+*/
+
+.blur-filter {
+    opacity: 1;
+    filter: blur(5px);;
+}
+
+.cocke-color{
+    background-color: #fe001acf;
+}
+
+/* 
+LIST GROUP
+*/
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    background-color: transparent;
+    border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}
+

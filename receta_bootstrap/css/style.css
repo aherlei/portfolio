@@ -1,0 +1,65 @@
+/* 
+Antonio J. Heredia Leiva
+*/
+
+/* 
+Variables Generales
+*/
+
+@font-face {
+    font-family: coke;
+    src: url(../fonts/Coca\ Cola\ ii.ttf);
+}
+
+@font-face {
+font-family: main;
+src: url(../fonts/Genjutsu.ttf);
+}
+
+html {
+    background-color: black;
+}
+
+/* 
+Body
+*/
+body{
+    font-family: main !important;
+    background-image: url('../images/bg-coke.jpg');
+    background-position: 33% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header {
+    
+}
+
+blockquote {
+    font-family: coke;
+}
+
+.img-icon-coke {
+    background-image: url('../images/cocke.png');
+}
+
+/* 
+Tamaños
+*/
+
+.w-little-px{
+    width: 120px;
+}
+
+.fs-10{
+    font-size:3em ;
+}
+
+/* 
+Ingredientes
+*/
+
+li{
+    text-decoration: none;
+}
