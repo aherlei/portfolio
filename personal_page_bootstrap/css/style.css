@@ -1,0 +1,89 @@
+/* *{
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+
+#my_web {
+    background-image: url(../images/hero-coke.jpg);
+    min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.max-width-50{
+    max-width: 60vw !important;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.filter-b{
+    filter: blur(30px);
+}
+
+.height_header{
+    height: 20vh;
+}
+
+.position_relative{
+    position: relative;
+}
+
+.position_try{
+    position: absolute;
+    bottom: 80;
+    z-index: 3;
+    top: 25%;
+    left: 10%;
+}
+
+.cards_bg{
+    background-color: rgba(240, 248, 255, 0.167);
+}
+
+.hover-card{
+    background-color: black !important;
+}
+
+.hover-card:hover{
+    color: rgba(0, 0, 0, 0) !important;
+    /* color: aqua !important; */
+}
+
+.space-rows{
+    margin-top: 2rem !important;
+    padding-top: 2rem !important;
+}
+
+.height_view{
+    height: 30em;
+    /* display: flex !important; */
+}
+
+.card-img-overlay{
+    position: absolute !important;
+    background-color: rgba(0, 0, 0, 0.562) !important;
+}
+
+.card-img-overlay:hover {
+    background-color: transparent !important;
+}
+
+.shadows_custom {
+    /* box-shadow: inset 1px 1px 13px 8px black; */ 
+    box-shadow: #000 3px 3px 6px 0px inset, #ffd3078f -3px -3px 6px 1px inset;
+
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+
+}
+
+.shadows_custom:before{
+    
+}
+
