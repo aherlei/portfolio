@@ -52,8 +52,10 @@
 .cards_bg{
     background-image: url(../images/burbujas_sin_fondo.png);
     /* background-color: rgba(10, 36, 59, 0.479); */
-    background-position: top;
-    background-size: 33%;
+    background-position: bottom;
+    background-size: 50%;
+    /* background-repeat: no-repeat; */
+    box-shadow: 0 4px 0 1px black;
 }
 
 .card_item_bg{
@@ -96,4 +98,5 @@
     /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
 
 }
+
 
