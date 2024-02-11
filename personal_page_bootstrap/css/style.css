@@ -36,15 +36,23 @@
 }
 
 .position_try{
-    position: absolute;
+    position: relative;
     bottom: 80;
-    z-index: 3;
-    top: 25%;
+    z-index: 1;
+    top: -67px;
     left: 10%;
 }
 
 .cards_bg{
-    background-color: rgba(240, 248, 255, 0.167);
+    background-image: url(../images/burbujas_sin_fondo.png);
+    /* background-color: rgba(10, 36, 59, 0.479); */
+    background-position: top;
+    background-size: 33%;
+}
+
+.card_item_bg{
+    background-color: rgba(10, 36, 59, 0.479) !important;
+
 }
 
 .hover-card{
@@ -62,7 +70,7 @@
 }
 
 .height_view{
-    height: 30em;
+    height: 50em !important;
     /* display: flex !important; */
 }
 
