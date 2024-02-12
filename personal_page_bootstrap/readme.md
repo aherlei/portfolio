@@ -54,7 +54,7 @@ He intentado que la historia tenga un sentido y que al final tenga un gancho, ya
 <br></p> 
 
 <h3>Hero Section</h3>
-<img src="./bm-readme/heroSection.PNG" alt="imagen de hero section" style="width:50%">
+<img src="./bm-readme/seccion1_header.png" alt="imagen de hero section" style="width:50%">
 <p> Navbar, esta cogida de bootstrap, simple, sin buscador y luego le he modificado para que sea flex, el icono de "empresa" de walter's coke, esta hecho en una página dedicada a crear letreros son fuentes especiales llamada:_________ he creado el mismo letrero con distintos colores para que me sirva en los distintas secciones de la web.<br>
 </p><br>
 <p> La blockquote tiene un fondo con filtro blur, posicion relativa y tamaños con pixeles, al igual que la frase que esta posicionada encima de la misma manera.<br>
