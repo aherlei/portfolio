@@ -99,4 +99,9 @@
 
 }
 
+.form-check-input:checked {
+    background-color: #000000 !important;
+    border-color: #ff0000 !important;
+}
+
 
