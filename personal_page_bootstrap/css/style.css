@@ -18,6 +18,16 @@
     margin-left: 0 !important;
 }
 
+.up_button{
+    opacity: .25 !important;
+    transition: 200ms;
+}
+
+.up_button:hover{
+    opacity: .75 !important;
+    transition: 10ms;
+}
+
 
 .max-width-50{
     max-width: 60vw !important;
@@ -98,9 +108,7 @@
 .shadows_custom {
     /* box-shadow: inset 1px 1px 13px 8px black; */ 
     box-shadow: #000 3px 3px 6px 0px inset, #ffd3078f -3px -3px 6px 1px inset;
-
     /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
-
 }
 
 .form-check-input:checked {

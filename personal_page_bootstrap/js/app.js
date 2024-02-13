@@ -8,6 +8,6 @@ function lan(){
     if (check) {
         location.href="../index.html";
     } else {
-        location.href="en/index.html";
+        location.href="es/index.html";
     }
 }
