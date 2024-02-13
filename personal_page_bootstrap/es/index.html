@@ -26,37 +26,34 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse container custom_nav" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse  custom_nav" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Marcas</a>
-                    </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Descubre
+                        Historias
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#inicios">Inicios</a></li>
+                        <li><a class="dropdown-item" href="#historias">Historias</a></li>
+                        <li><a class="dropdown-item" href="#curiosidades">Curiosidades</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Impacto
-                      </a>
-                      <!-- <ul class="dropdown-menu">
-                        <li><a class="dropdown-item en" href="#">English</a></li>
-                        <input type="checkbox" class="check" name="" id="">
-                        <li><a class="dropdown-item es" href="#">Spanish</a></li>
-                      </ul> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#carrusel">Carrusel</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#formulario">Formulario</a>
                     </li>
                   </ul>
-                  <div class="form-check form-switch">
+                  <div class=" nav-item form-check dropdown form-switch">
                     <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckChecked">
                     <label class="form-check-label" for="flexSwitchCheckChecked">Inglés</label>
                   </div>
+                  
                 </div>
               </div>
             </nav>
@@ -71,7 +68,7 @@
         </h1>
         <div class="main_container container text-center">
           <!-- SECCION 1 -->
-          <div class="section_1 height_view d-flex">
+          <div id="inicios" class="section_1 height_view d-flex">
             <div class="row my-5 bg-light rounded my-auto fw-bold shadows_custom">
               <!-- introduccion -->
               <div class="col-sm-12 col-md py-2 m-auto ">
@@ -86,7 +83,7 @@
             </div>
           </div>
           <!-- SECCION 2 -->
-          <div class="row">
+          <div id="carrusel" class="row">
             <!-- carrusel -->
             <div class="col">
               <div id="carouselExampleControlsNoTouching" class="carousel slide max-width-50 mx-auto" data-bs-touch="false">
@@ -114,7 +111,7 @@
           </div>
           <!-- SECCION 3 -->
           <!-- informacion adicional -->
-          <div class="section_1 height_view d-flex">
+          <div id="historias" class="section_1 height_view d-flex">
             <div class="row my-5 rounded bg-light my-auto shadows_custom fw-bold">
               <!-- introduccion -->
               <div class="col-sm-12 col-md py-2 m-auto ">
@@ -129,6 +126,7 @@
             </div>
           </div>
           <!-- SECCION 4 -->
+          <div id="galeria"></div>
           <div class="row space-rows justify-content-center rounded cards_bg">
             <div class="row space-rows d-flex my-auto">
               <p class="fs-3 fw-bolder">Pinturas del químico</p>
@@ -169,9 +167,9 @@
             <div class="my-5"></div>
           </div>
           <!-- SECCION 5 -->
-          <div class="section_1 height_view d-flex">
+          <div id="curiosidades" class="section_1 height_view d-flex">
             <div class="row my-5 bg-light rounded my-auto fw-bold shadows_custom">
-              <!-- introduccion -->
+              <!-- curiosidades -->
               <div class="col-sm-12 col-md py-2 m-auto ">
                 <h3 class="text-center"> Curiosidades </h3>
               </div>
@@ -184,6 +182,7 @@
             </div>
           </div>
           <!-- SECCION 6 -->
+          <div id="formulario"></div>
           <div class="section-6 height_view">
 
             <div class="row my-5 card_item_bg rounded-5 fw-bolder p-5">

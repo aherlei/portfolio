@@ -11,6 +11,10 @@
   </head>
   <body>
     <div id="my_web">
+        <!-- boton flotante para subir -->
+        <div class="position-relative ">
+          <div class="position-fixed bottom-0 end-0 text-light translate-middle"> <a href="#"> <img src="./images/Coca-Cola-Transparente-PNG.png" width="50" class="up_button" alt=""></a></div>
+        </div>
         <!-- header -->
         <div class="header_container "><!-- esto lo pongo con flex -->
           <div class="nav_bar_container ">
@@ -22,36 +26,32 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse container custom_nav" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse  custom_nav" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Brands</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Descubre
+                        Histories
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#beginnings">Beginnings</a></li>
+                        <li><a class="dropdown-item" href="#history">History</a></li>
+                        <li><a class="dropdown-item" href="#curiosities">Curiosities</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Language
-                      </a>
-                      <!-- <ul class="dropdown-menu">
-                        <li><a class="dropdown-item en" href="#">English</a></li>
-                        <input type="checkbox" class="check" name="" id="" checked>
-                        <li><a class="dropdown-item es" href="#">Spanish</a></li>
-                      </ul> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#carrusel">Carrusel</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#form">Form</a>
                     </li>
                   </ul>
-                  <div class="form-check form-switch">
+                  <div class=" nav-item form-check dropdown form-switch">
                     <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                    <label class="form-check-label" for="flexSwitchCheckChecked">Spanish</label>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Inglés</label>
                   </div>
                 </div>
               </div>
@@ -65,7 +65,7 @@
             <p>"Have a Coke and a smile (1979)"</p>
           </blockquote>
         </h1>
-        <div class="main_container container text-center">
+        <div id="beginnings" class="main_container container text-center">
           <!-- SECCION 1 -->
           <div class="section_1 height_view d-flex">
             <div class="row my-5 bg-light rounded my-auto fw-bold shadows_custom">
@@ -82,7 +82,7 @@
             </div>
           </div>
           <!-- SECCION 2 -->
-          <div class="row">
+          <div id="carrusel" class="row">
             <!-- carrusel -->
             <div class="col">
               <div id="carouselExampleControlsNoTouching" class="carousel slide max-width-50 mx-auto" data-bs-touch="false">
@@ -110,7 +110,7 @@
           </div>
           <!-- SECCION 3 -->
           <!-- informacion adicional -->
-          <div class="section_1 height_view d-flex">
+          <div id="history" class="section_1 height_view d-flex">
             <div class="row my-5 rounded bg-light my-auto shadows_custom fw-bold">
               <!-- introduccion -->
               <div class="col-sm-12 col-md py-2 m-auto ">
@@ -125,6 +125,7 @@
             </div>
           </div>
           <!-- SECCION 4 -->
+          <div id="gallery"></div>
           <div class="row space-rows justify-content-center rounded cards_bg">
             <div class="row space-rows d-flex my-auto">
               <p class="fs-3 fw-bolder">Chemist gallery</p>
@@ -165,7 +166,7 @@
             <div class="my-5"></div>
           </div>
           <!-- SECCION 5 -->
-          <div class="section_1 height_view d-flex">
+          <div id="curiosities" class="section_1 height_view d-flex">
             <div class="row my-5 bg-light rounded my-auto fw-bold shadows_custom">
               <!-- introduccion -->
               <div class="col-sm-12 col-md py-2 m-auto ">
@@ -180,8 +181,7 @@
             </div>
           </div>
           <!-- SECCION 6 -->
-          <div class="section-6 height_view">
-
+          <div id="form" class="section-6 height_view">
             <div class="row my-5 card_item_bg rounded-5 fw-bolder p-5">
               <!-- formulario con algo -->
               <form class="rounded-5 text-light p-3">
