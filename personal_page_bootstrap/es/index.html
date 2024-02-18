@@ -186,19 +186,20 @@
 
             <div class="row my-5 card_item_bg rounded-5 fw-bolder p-5">
               <!-- formulario con algo -->
-              <form class="rounded-5 text-light p-3">
+              <form class="rounded-5 text-light p-3" onsubmit="return validation()">
                 <p class="text-light">Si quieres saber mas sobre la intrigante, dura, y controvertida historia ingresa en nuestra newsletter de  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="link-warning" target="_blank">onlyStories</a></p>
                 <div class="mb-3 .card_item_bg">
-                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll allways share your email with everyone.</div>
+                <label for="email" class="form-label">Email <span class="text-warning">*</span></label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text visually-hidden text-warning">Introduzca su mail.</div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <label for="exampleInputPassword1" class="form-label">Password <span class="text-warning">*</span></label>
+                  <input type="password" class="form-control" id="password">
+                  <div id="passHelp" class="form-text visually-hidden text-warning">Introduzca su contraseña.</div>
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" aria-describedby="passlHelp">
                   <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con los terminos</label>
                 </div>
                 <button type="submit" class="btn btn-warning p-3 mt-5 fw-bold">Acceder</button>

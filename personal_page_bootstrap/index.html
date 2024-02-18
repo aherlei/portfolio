@@ -184,21 +184,22 @@
           <div id="form" class="section-6 height_view">
             <div class="row my-5 card_item_bg rounded-5 fw-bolder p-5">
               <!-- formulario con algo -->
-              <form class="rounded-5 text-light p-3">
+              <form class="rounded-5 text-light p-3" onsubmit="return validation()">
                 <p class="text-light">If you want to learn more about the intriguing, tough, and controversial story, join our <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="link-warning" target="_blank">onlyStories</a> newsletter.</p> 
                 <div class="mb-3 .card_item_bg">
-                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll allways share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">I'm coke adict</label>
-                </div>
+                  <label for="email" class="form-label">Email <span class="text-warning">*</span></label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text visually-hidden text-warning">please, enter yout mail.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password <span class="text-warning">*</span></label>
+                    <input type="password" class="form-control" id="password">
+                    <div id="passHelp" class="form-text visually-hidden text-warning">Please, enter your password.</div>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" aria-describedby="passlHelp">
+                    <label class="form-check-label" for="exampleCheck1">I'm agree with terms and conditions.</label>
+                  </div>
                 <button type="submit" class="btn btn-warning p-3 mt-5 fw-bold">Open your coke</button>
               </form>
             </div>
