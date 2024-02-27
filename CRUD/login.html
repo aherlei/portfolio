@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" href="imagen/librillotrans.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="estilos/login.css">
 </head>
 <body>
     <div class="login">
         <h1>Login</h1>
-        <form method="post">
-            <input type="text" name="user" placeholder="Username" required="required" />
-            <input type="password" name="pass" placeholder="Password" required="required" />
+        <form method="post" onsubmit="return validar()">
+            <input type="text" name="user" id="user" placeholder="Username" onchange="white('user')" />
+            <div id="userHelp" class="text-red d-none">Debe contener entre 8 y 12 carácteres</div>
+            <div class="input-wrapper">
+                <input type="password" name="pass" id="password" class="input-enter" placeholder="Password" onchange="white('password')" />
+                <i class="bi bi-eye-fill input-icon password"></i>
+            </div>
+            <div id="passwordHelp" class="text-red d-none">Debe contener al menos un número y una letra mayúscula y minúscula, y al menos 8 o más caracteres</div>
             <button type="submit" class="btn btn-primary btn-block btn-large">Entrar</button>
         </form>
     </div>
 </body>
+<script src="js/validacionLogin.js"></script>
 </html>

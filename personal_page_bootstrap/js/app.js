@@ -1,7 +1,7 @@
-const email = document.getElementById('email');
+const email    = document.getElementById('email');
 const password = document.getElementById('password');
 const emailMsg = document.getElementById('emailHelp');
-const passMsg = document.getElementById('passHelp');
+const passMsg  = document.getElementById('passHelp');
 const language = document.querySelector(".check")
 
 language.addEventListener('click', lan);
@@ -39,10 +39,10 @@ email.addEventListener('keydown', reset, false);
 function reset(){
 
     emailMsg.classList.add("visually-hidden");
-    email.style.borderColor = "green";;
-    
+    email.style.borderColor = "green";
+
     passMsg.classList.add("visually-hidden");
-    password.style.borderColor = "green";;
+    password.style.borderColor = "green";
 }
 
 

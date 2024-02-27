@@ -1,31 +1,95 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Ruta al archivo JSON (ajusta la ruta según tu estructura de archivos)
-    const jsonFilePath = 'json/libros.json';
+const select = document.getElementById('gender');
+const selectHelp = document.getElementById('genderHelp')
+const title = document.getElementById('title')
+const titleHelp = document.getElementById('titleHelp')
+const year = document.getElementById('year')
+const yearHelp = document.getElementById('yearHelp')
+const autor = document.getElementById('autor')
+const autorHelp = document.getElementById('autorHelp')
+const code = document.getElementById('code')
+const codeHelp = document.getElementById('codeHelp')
+const check = document.getElementById('terminos')
+const checkHelp = document.getElementById('terminosHelp')
+const body = document.body
+
+
+
+function validar(e){
+  e.preventDefault();
+
+  let testing = 0;
+  let option = true;
+
+  //VALIDAR INSERCION
+  if (title.value === "" || !(/^[a-zA-ZñÑ\s']+$/.test(title.value))) {
+    titleHelp.style.display="block"
+    body.style.overflowY="auto"
+    option = false;
+    testing--
+  } else {
+    testing++
+  }
+
+  console.log(testing)
+  if (select.value == "" || select.value == null)  {
+    selectHelp.style.display="block"
+    option = false;
+    testing--
+  } else {
+    testing++
+  }
+  console.log(testing)
+
+  if (year.value == "" || !(/^\d{4}$/.test(year.value)) ) {
+    yearHelp.style.display="block"
+    option = false;
+    testing--
+  } else {
+    testing++
+  }
+  console.log(testing)
+
+  if (autor.value == "" || !(/^[a-zA-Z\s']+$/.test(autor.value)) ) {
+    autorHelp.style.display="block"
+    option = false;
+    testing--
+  } else {
+    testing++
+  }
+  console.log(testing)
+
+  if (code.value == "" || !(/^\d{1,13}$/.test(code.value))) {
+    codeHelp.style.display="block"
+    option=false;
+    testing--
+  } else {
+    testing++
+  }
+  console.log(testing)
+
+  if (!check.checked) {
+    checkHelp.style.display="block"
+    option=false;
+    testing--
+  } else {
+    testing++
+  }
+  console.log(testing)
+
+  resetBody(testing)
   
-    // Obtener el contenedor de libros
-    const librosContainer = document.getElementById('libros-container');
+  return option
+}
+
+function resetBody(testing){
+  if(testing < 6) {body.style.overflowY="auto"}
+  else {body.style.overflowY="hidden"}
   
-    // Cargar y mostrar los libros desde el JSON
-    fetch(jsonFilePath)
-      .then(response => response.json())
-      .then(libros => {
-        // Crear HTML para mostrar cada libro
-        const librosHTML = libros.map(libro => {
-          return `
-            <div>
-              <strong>ID:</strong> ${libro.id}<br>
-              <strong>Título:</strong> ${libro.title}<br>
-              <strong>Año:</strong> ${libro.year}<br>
-              <strong>Autor:</strong> ${libro.autor}<br>
-              <strong>Género:</strong> ${libro.genre}<br>
-              <hr>
-            </div>
-          `;
-        }).join('');
   
-        // Mostrar los libros en el contenedor
-        librosContainer.innerHTML = librosHTML;
-      })
-      .catch(error => console.error('Error al cargar el JSON:', error));
-  });
+}
+
+function white(id){
+  document.getElementById(id + 'Help').style.display="none"
   
+
+}

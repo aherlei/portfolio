@@ -3,44 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modificación de datos</title>
-    <link rel="shortcut icon" href="imagen/librillotrans.png" type="image/x-icon">
+    <title>Insecion de datos</title>
     <link rel="stylesheet" href="estilos/insercion.css">
+    <link rel="shortcut icon" href="imagen/librillotrans.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Modificación de libros</h1>
+    <h1>Registro de libro</h1>
 
     <div class="container" style="max-width: 650px; min-width: 400px;">
         <div class="card">
             <div class="card-body container_form">
-                <form id="myForm" onsubmit="return validar()">
+                <form id="myForm" onsubmit="return validar(event)">
                     <div class="form-group">
-                        <label for="title">Nombre:</label>
-                        <input type="text" class="form-control" id="title" placeholder="Titulo..." value="El seño de los anillos">
-                        <label for="gender">Genero</label>
-                        <select id="gender">
-                            <option value="fantasy">Fantasía</option>
-                            <option value="love">Amor</option>
-                            <option value="police">Policiaco</option>
-                            <option value="terror">Miedo</option>
-                            <option value="history">Historico</option>
+                        <!-- NOMBRE -->
+                        <label for="title">Nombre: <span class="text-red">*</span></label>
+                        <input type="text" class="form-control" id="title" placeholder="título..." value="El señor de los anillos" onkeypress="white('title')">
+                        <div id="titleHelp" class="text-red d-none">título obligatorio...</div>
+                        <!-- GENERO -->
+                        <label for="gender">Genero <span class="text-red">*</span></label>
+                        <select id="gender" onchange="white('gender')">
+                            <option value=""       > Elija una opción</option>
+                            <option value="cifi"   > Ciencia ficción</option>
+                            <option value="love"   > Amor</option>
+                            <option value="police" > Policiaco</option>
+                            <option value="terror" > Miedo</option>
+                            <option value="fantasy" selected> Fantasia</option>
                         </select>
-                        <label for="year">Año</label>
-                        <input type="number" class="form-control" id="year" placeholder="1980" value="1980">
-                        <label for="autor">Autor</label>
-                        <input type="text" class="form-control" id="autor" placeholder="Tolkien" value="Tolkien">
-                        <label for="codipos">Código del libro</label>
-                        <input type="text" class="form-control" id="codipos" placeholder="44556123" value="44556123">
+                        <div id="genderHelp" class="text-red d-none">elija una de las opciones...</div>
+                        <!-- AÑO -->
+                        <label for="year">Año <span class="text-red">*</span></label>
+                        <input type="number" class="form-control" id="year" placeholder="Año..." value="1980" onchange="white('year')">
+                        <div id="yearHelp" class="text-red d-none">el año debe tener 4 digitos...</div>
+                        <!-- AUTOR -->
+                        <label for="autor">Autor <span class="text-red">*</span></label>
+                        <input type="text" class="form-control" id="autor" placeholder="Autor..." value="Tolkien" onchange="white('autor')">
+                        <div id="autorHelp" class="text-red d-none">introduzca nombre autor...</div>
+                        <!-- ISBN -->
+                        <label for="codipos">Código del libro <span class="text-red">*</span></label>
+                        <input type="text" class="form-control" id="code" placeholder="ISBN..." value="44556123" onkeypress="white('code')">
+                        <div id="codeHelp" class="text-red d-none">introduzca un numero entre 9 y 13 digitos...</div>
+                        <!-- CONFIRMACION DE DATOS -->
                         <br><br>
-                        <label for="terminos">Modificación:</label>
-                        <input type="checkbox" id="terminos"> <span>Quiero modificar los datos   </span>       
+                        <label for="terminos">Legalidades: <span class="text-red">*</span></label><br>
+                        <input type="checkbox" id="terminos" onchange="white('terminos')"> <span>Confirmo que los datos son correctos   </span>
+                        <div id="terminosHelp" class="text-red d-none">debe aceptar los datos...</div>
+                        <!--  -->
+
                     </div>
                     <br>
-                    <input type="submit" class="btn btn-success btn btn-primary  btn-large" id="button" value="Aceptar">
+                    <input type="submit" class="btn btn-success btn btn-primary  btn-large" id="button" value="Registrar">
                     <input type="reset" class="btn btn-danger btn btn-primary  btn-large" id="button" value="Reiniciar">
+                    
                 </form>
             </div>
         </div>
     </div>
 </body>
+<script src="js/script.js"></script>
 </html>

@@ -70,7 +70,7 @@
 html { width: 100%; height:100%; overflow:hidden; }
 
 body { 
-	width: 100%;
+	/* width: 100%; */
 	height:100%;
 	font-family: 'Open Sans', sans-serif;
 	background: #575758a0;
@@ -115,3 +115,41 @@ input {
 	transition: box-shadow .5s ease;
 }
 input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+.text-red{
+	color: yellow;
+	padding-bottom: 1rem;
+}
+.d-none{
+	display: none;
+}
+
+.input-wrapper {
+	position: relative;
+}
+  
+.input-enter {
+	width: 100%;
+}
+
+.input-icon {
+	color: #1919197a;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 12px;
+	top: 18%;
+	cursor: pointer;
+}
+.input-icon:hover {
+	color: #191919;
+}
+.input-icon.active {
+	color: #fff;
+}
+
+
+.input-icon.password {
+	left: unset;
+	right: 12px;
+}
