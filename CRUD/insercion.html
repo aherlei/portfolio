@@ -39,12 +39,29 @@
                         <input type="text" class="form-control" id="autor" placeholder="Autor..." onchange="white('autor')">
                         <div id="autorHelp" class="text-red d-none">introduzca nombre autor...</div>
                         <!-- ISBN -->
-                        <label for="codipos">Código del libro <span class="text-red">*</span></label>
+                        <label for="codigos">Código del libro <span class="text-red">*</span></label>
                         <input type="text" class="form-control" id="code" placeholder="ISBN..." onkeypress="white('code')">
                         <div id="codeHelp" class="text-red d-none">introduzca un numero entre 9 y 13 digitos...</div>
+                        <!-- RADIO BUTTON -->
+                        <label for="para">Dirigido a lectores: <span class="text-red">*</span></label>
+                        <div class="radio">
+                            <div class="radio-element">
+                                <input type="radio" id="amateurs" class="tipo-lector" name="tipo-lector" onchange="white('tipo')" value="amateurs">
+                                <span for="amateurs">Amateurs</span>
+                            </div>
+                            <div class="radio-element">
+                                <input type="radio" id="medios" class="tipo-lector" name="tipo-lector" onchange="white('tipo')" value="medios">
+                                <span for="medios">Medios</span>
+                            </div>
+                            <div class="radio-element">
+                                <input type="radio" id="pros" class="tipo-lector" name="tipo-lector" onchange="white('tipo')" value="pros">
+                                <span for="pros">Pros</span>
+                            </div>
+                        </div>
+                        <div id="tipoHelp" class="text-red d-none">debe seleccionar una opción...</div>
                         <!-- CONFIRMACION DE DATOS -->
                         <br><br>
-                        <label for="terminos">Legalidades: <span class="text-red">*</span></label><br>
+                        <label for="terminos">Confirmación: <span class="text-red">*</span></label><br>
                         <input type="checkbox" id="terminos" onchange="white('terminos')"> <span>Confirmo que los datos son correctos   </span>
                         <div id="terminosHelp" class="text-red d-none">debe aceptar los datos...</div>
                         <!--  -->

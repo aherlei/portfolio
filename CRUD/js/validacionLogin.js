@@ -15,7 +15,7 @@ function validar(){
         option=false;
     }
 
-    if (!password.value || !(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/.test(password.value))) {
+    if (!password.value || !(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}$/.test(password.value))) {
         passwordHelp.style.display="block"
         option=false;
     }

@@ -10,8 +10,9 @@ const code = document.getElementById('code')
 const codeHelp = document.getElementById('codeHelp')
 const check = document.getElementById('terminos')
 const checkHelp = document.getElementById('terminosHelp')
+const tipoHelp = document.getElementById('tipoHelp')
+const radios = document.getElementsByName("tipo-lector");
 const body = document.body
-
 
 
 function validar(e){
@@ -76,6 +77,14 @@ function validar(e){
   }
   console.log(testing)
 
+
+  if (!radios[0].checked && !radios[1].checked && !radios[2].checked) {
+    tipoHelp.style.display="block"
+    console.log(tipoHelp.style.display)
+    console.log(radios[0].checked)
+    option = false
+  }
+
   resetBody(testing)
   
   return option
@@ -83,9 +92,7 @@ function validar(e){
 
 function resetBody(testing){
   if(testing < 6) {body.style.overflowY="auto"}
-  else {body.style.overflowY="hidden"}
-  
-  
+  else {body.style.overflowY="auto"}
 }
 
 function white(id){
